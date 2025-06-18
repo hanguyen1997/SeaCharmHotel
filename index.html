@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="page_title">Luxury Escape - Where Luxury Meets Nature</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#home">Sea Charm</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#home" data-translate="nav_home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#about" data-translate="nav_about">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#rooms" data-translate="nav_rooms">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#facilities" data-translate="nav_facilities">Facilities</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#reviews" data-translate="nav_reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#blog" data-translate="nav_blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#contact" data-translate="nav_contact">Contact</a></li>
+                    <!-- Language Switcher -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe me-1"></i>
+                            <span id="currentLang">EN</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">
+                                <img src="https://flagcdn.com/16x12/us.png" alt="English" class="me-2"> English
+                            </a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('vi')">
+                                <img src="https://flagcdn.com/16x12/vn.png" alt="Tiếng Việt" class="me-2"> Tiếng Việt
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="hero-title display-1 fw-bold mb-3">Sea Charm</h1>
+                    <p class="hero-subtitle fs-4 text-muted mb-4" data-translate="hero_subtitle">Where Luxury Meets Nature</p>
+                    <button class="btn btn-dark btn-lg px-4 py-2" data-translate="hero_book_now">Book Now</button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-images position-relative">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Luxury Room" class="img-fluid rounded-3 shadow-sm">
+                            </div>
+                            <div class="col-6">
+                                <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Resort View" class="img-fluid rounded-3 shadow-sm mb-3">
+                                <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Bedroom" class="img-fluid rounded-3 shadow-sm">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title text-white" data-translate="about_title">About Us</h2>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-images">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Beach View" class="img-fluid rounded-3 mb-3">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Luxury Interior" class="img-fluid rounded-3">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content ps-lg-5">
+                        <div class="stats-row d-flex justify-content-around mb-4 text-center">
+                            <div class="stat-item">
+                                <h3 class="stat-number display-6 fw-bold mb-0" style="color: #F4F1ED;">4 K+</h3>
+                                <p class="stat-label text-light" data-translate="stat_guests">Happy Guests</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number display-6 fw-bold mb-0" style="color: #F4F1ED;">10+</h3>
+                                <p class="stat-label text-light" data-translate="stat_experience">Years Experience</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number display-6 fw-bold mb-0" style="color: #F4F1ED;">80+</h3>
+                                <p class="stat-label text-light" data-translate="stat_rooms">Rooms</p>
+                            </div>
+                        </div>
+                        <p class="lead text-light" data-translate="about_description">Experience the perfect blend of luxury and nature at our exclusive resort. We provide world-class amenities and exceptional service in a breathtaking natural setting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Rooms Section -->
+    <section id="rooms" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-translate="rooms_title">Our Room</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="room-images">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Grand Room" class="img-fluid rounded-3 mb-3">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Premier Suite" class="img-fluid rounded-3 mb-3">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Royal Comfort" class="img-fluid rounded-3 mb-3">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Executive Retreat" class="img-fluid rounded-3">
+                    </div>
+                </div>
+                <div class="col-lg-8 ps-lg-5">
+                    <div class="room-list">
+                        <div class="room-item d-flex align-items-center mb-4 p-4 bg-white rounded-3 shadow-sm">
+                            <div class="room-content flex-grow-1">
+                                <h4 class="room-title mb-2" data-translate="room_grand_title">The Grand Room</h4>
+                                <p class="room-description text-muted mb-0" data-translate="room_grand_desc">Spacious and elegantly designed with premium amenities and stunning views of the resort grounds.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="room-item d-flex align-items-center mb-4 p-4 bg-white rounded-3 shadow-sm">
+                            <div class="room-content flex-grow-1">
+                                <h4 class="room-title mb-2" data-translate="room_premier_title">Premier Suite</h4>
+                                <p class="room-description text-muted mb-0" data-translate="room_premier_desc">Ultimate luxury with separate living area and exclusive concierge service for discerning guests.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="room-item d-flex align-items-center mb-4 p-4 bg-white rounded-3 shadow-sm">
+                            <div class="room-content flex-grow-1">
+                                <h4 class="room-title mb-2" data-translate="room_royal_title">Royal Comfort</h4>
+                                <p class="room-description text-muted mb-0" data-translate="room_royal_desc">Perfect blend of comfort and luxury with modern amenities and personalized service.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="room-item d-flex align-items-center mb-4 p-4 bg-white rounded-3 shadow-sm">
+                            <div class="room-content flex-grow-1">
+                                <h4 class="room-title mb-2" data-translate="room_executive_title">Executive Retreat</h4>
+                                <p class="room-description text-muted mb-0" data-translate="room_executive_desc">Business-friendly accommodation with executive lounge access and premium facilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Section -->
+    <section id="event" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Event Dining" class="img-fluid rounded-3">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="section-title text-white mb-4" data-translate="event_title">Event</h2>
+                    <p class="lead text-light mb-4" data-translate="event_description">Transform your special occasions into unforgettable memories. Our elegant venues and professional event planning team ensure every detail is perfect.</p>
+                    <ul class="event-features list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check me-3" style="color: #F4F1ED;"></i><span data-translate="event_feature_1">Professional event planning and coordination</span></li>
+                        <li class="mb-2"><i class="fas fa-check me-3" style="color: #F4F1ED;"></i><span data-translate="event_feature_2">Customized catering and menu options</span></li>
+                        <li class="mb-2"><i class="fas fa-check me-3" style="color: #F4F1ED;"></i><span data-translate="event_feature_3">State-of-the-art audiovisual equipment</span></li>
+                        <li class="mb-2"><i class="fas fa-check me-3" style="color: #F4F1ED;"></i><span data-translate="event_feature_4">Flexible venue configurations</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Facilities -->
+    <section id="facilities" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-translate="facilities_title">Hotel Facilities</h2>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="facility-card text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                        <i class="fas fa-swimmer facility-icon fs-1 mb-3" style="color: #F4F1ED;"></i>
+                        <h5 class="facility-title mb-3" data-translate="facility_pool_title">Pool</h5>
+                        <p class="facility-description text-muted mb-0" data-translate="facility_pool_desc">Olympic-size swimming pool with poolside service</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="facility-card text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                        <i class="fas fa-spa facility-icon fs-1 mb-3" style="color: #F4F1ED;"></i>
+                        <h5 class="facility-title mb-3" data-translate="facility_spa_title">Spa</h5>
+                        <p class="facility-description text-muted mb-0" data-translate="facility_spa_desc">Full-service spa for ultimate relaxation</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="facility-card text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                        <i class="fas fa-utensils facility-icon fs-1 mb-3" style="color: #F4F1ED;"></i>
+                        <h5 class="facility-title mb-3" data-translate="facility_restaurant_title">Restaurant</h5>
+                        <p class="facility-description text-muted mb-0" data-translate="facility_restaurant_desc">Fine dining with international cuisine</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="facility-card text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                        <i class="fas fa-dumbbell facility-icon fs-1 mb-3" style="color: #F4F1ED;"></i>
+                        <h5 class="facility-title mb-3" data-translate="facility_gym_title">Gym</h5>
+                        <p class="facility-description text-muted mb-0" data-translate="facility_gym_desc">State-of-the-art fitness center</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="facility-image-card position-relative overflow-hidden rounded-3">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Spa Facility" class="img-fluid">
+                        <div class="facility-overlay position-absolute bottom-0 start-0 w-100 p-4 text-white">
+                            <h5 class="mb-2" data-translate="facility_spa_overlay_title">Spa</h5>
+                            <p class="mb-0" data-translate="facility_spa_overlay_desc">Rejuvenate your body and mind with our premium spa treatments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="facility-image-card position-relative overflow-hidden rounded-3">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Restaurant" class="img-fluid">
+                        <div class="facility-overlay position-absolute bottom-0 start-0 w-100 p-4 text-white">
+                            <h5 class="mb-2" data-translate="facility_restaurant_overlay_title">Restaurant</h5>
+                            <p class="mb-0" data-translate="facility_restaurant_overlay_desc">Experience culinary excellence with our world-class chefs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guest Reviews -->
+    <section id="reviews" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title text-white" data-translate="reviews_title">Guest Review</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="review-card p-4 bg-white text-dark rounded-3">
+                        <div class="review-header d-flex align-items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b332c05f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Guest Sarah" class="guest-photo rounded-circle me-3" width="60" height="60">
+                            <div class="guest-info">
+                                <h6 class="guest-name mb-1">Sarah Johnson</h6>
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text mb-0" data-translate="review_sarah">"Absolutely stunning resort! The service was impeccable and the views were breathtaking. Every detail was perfect. Can't wait to return!"</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="review-card p-4 bg-white text-dark rounded-3">
+                        <div class="review-header d-flex align-items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Guest Michael" class="guest-photo rounded-circle me-3" width="60" height="60">
+                            <div class="guest-info">
+                                <h6 class="guest-name mb-1">Michael Chen</h6>
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text mb-0" data-translate="review_michael">"Perfect getaway destination. The staff went above and beyond to make our stay memorable. Luxury at its finest!"</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="review-card p-4 bg-white text-dark rounded-3">
+                        <div class="review-header d-flex align-items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Guest Emma" class="guest-photo rounded-circle me-3" width="60" height="60">
+                            <div class="guest-info">
+                                <h6 class="guest-name mb-1">Emma Rodriguez</h6>
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text mb-0" data-translate="review_emma">"An unforgettable experience! The attention to detail and personalized service exceeded all expectations."</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="review-card p-4 bg-white text-dark rounded-3">
+                        <div class="review-header d-flex align-items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Guest David" class="guest-photo rounded-circle me-3" width="60" height="60">
+                            <div class="guest-info">
+                                <h6 class="guest-name mb-1">David Wilson</h6>
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text mb-0" data-translate="review_david">"Outstanding resort with world-class amenities. The perfect blend of luxury and natural beauty."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Insights -->
+    <section id="blog" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title mb-0" data-translate="blog_title">Blog Insights</h2>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <button class="btn btn-dark" data-translate="blog_view_all">View All</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="blog-card bg-white rounded-3 overflow-hidden shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Travel Tips" class="blog-image img-fluid">
+                        <div class="blog-content p-4">
+                            <h5 class="blog-title mb-3" data-translate="blog_post_1_title">10 Tips for Luxury Travel</h5>
+                            <p class="blog-excerpt text-muted mb-3" data-translate="blog_post_1_excerpt">Discover the secrets to making your luxury travel experience truly unforgettable with our expert tips.</p>
+                            <a href="#" class="btn btn-outline-dark btn-sm" data-translate="blog_read_more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="blog-card bg-white rounded-3 overflow-hidden shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Spa Wellness" class="blog-image img-fluid">
+                        <div class="blog-content p-4">
+                            <h5 class="blog-title mb-3" data-translate="blog_post_2_title">Wellness & Spa Treatments</h5>
+                            <p class="blog-excerpt text-muted mb-3" data-translate="blog_post_2_excerpt">Explore our comprehensive range of rejuvenating spa treatments and wellness programs.</p>
+                            <a href="#" class="btn btn-outline-dark btn-sm" data-translate="blog_read_more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="blog-card bg-white rounded-3 overflow-hidden shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Local Attractions" class="blog-image img-fluid">
+                        <div class="blog-content p-4">
+                            <h5 class="blog-title mb-3" data-translate="blog_post_3_title">Local Attractions Guide</h5>
+                            <p class="blog-excerpt text-muted mb-3" data-translate="blog_post_3_excerpt">Discover the best attractions and activities in the beautiful surroundings of our resort.</p>
+                            <a href="#" class="btn btn-outline-dark btn-sm" data-translate="blog_read_more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book A Room Section -->
+    <section class="py-5 bg-warning">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Book Room" class="img-fluid rounded-3">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="section-title mb-4" data-translate="booking_title">Book A Room</h2>
+                    <p class="lead mb-4" data-translate="booking_description">Experience the ultimate in luxury and comfort. Book your perfect getaway today and create memories that will last a lifetime.</p>
+                    <form class="booking-form">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label" data-translate="booking_checkin">Check-in</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" data-translate="booking_checkout">Check-out</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label" data-translate="booking_adults">Adults</label>
+                                <select class="form-select" required>
+                                    <option value="" data-translate="booking_select">Select</option>
+                                    <option value="1" data-translate="booking_1_adult">1 Adult</option>
+                                    <option value="2" data-translate="booking_2_adults">2 Adults</option>
+                                    <option value="3" data-translate="booking_3_adults">3 Adults</option>
+                                    <option value="4" data-translate="booking_4_adults">4 Adults</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" data-translate="booking_children">Children</label>
+                                <select class="form-select">
+                                    <option value="0" data-translate="booking_0_children">0 Children</option>
+                                    <option value="1" data-translate="booking_1_child">1 Child</option>
+                                    <option value="2" data-translate="booking_2_children">2 Children</option>
+                                    <option value="3" data-translate="booking_3_children">3 Children</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-lg px-4" data-translate="booking_book_now">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect With Us -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-translate="contact_title">Connect With Us</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info bg-white p-5 rounded-3 shadow-sm h-100">
+                        <h5 class="mb-4" data-translate="contact_get_in_touch">Get In Touch</h5>
+                        <div class="contact-item d-flex align-items-center mb-3">
+                            <i class="fas fa-map-marker-alt me-3 fs-5" style="color: #F4F1ED;"></i>
+                            <span data-translate="contact_address">123 Paradise Island, Tropical Bay, TB 12345</span>
+                        </div>
+                        <div class="contact-item d-flex align-items-center mb-3">
+                            <i class="fas fa-phone me-3 fs-5" style="color: #F4F1ED;"></i>
+                            <span data-translate="contact_phone">+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <i class="fas fa-envelope me-3 fs-5" style="color: #F4F1ED;"></i>
+                            <span data-translate="contact_email">info@luxuryescape.com</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link me-3 text-decoration-none">
+                                <i class="fab fa-facebook-f text-white p-3 rounded-circle" style="background-color: #F4F1ED;"></i>
+                            </a>
+                            <a href="#" class="social-link me-3 text-decoration-none">
+                                <i class="fab fa-instagram text-white p-3 rounded-circle" style="background-color: #F4F1ED;"></i>
+                            </a>
+                            <a href="#" class="social-link me-3 text-decoration-none">
+                                <i class="fab fa-twitter text-white p-3 rounded-circle" style="background-color: #F4F1ED;"></i>
+                            </a>
+                            <a href="#" class="social-link text-decoration-none">
+                                <i class="fab fa-youtube text-white p-3 rounded-circle" style="background-color: #F4F1ED;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="contact-form bg-white p-5 rounded-3 shadow-sm">
+                        <div class="mb-3">
+                            <label class="form-label" data-translate="contact_form_name">Your Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" data-translate="contact_form_email">Your Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" data-translate="contact_form_message">Your Message</label>
+                            <textarea class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn text-dark fw-semibold px-4" style="background-color: #F4F1ED; border-color: #F4F1ED;" data-translate="contact_form_send">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Our Gallery -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-translate="gallery_title">Explore Our Gallery</h2>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-3 col-md-6">
+                    <div class="gallery-item overflow-hidden rounded-3">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gallery 1" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="gallery-item overflow-hidden rounded-3">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gallery 2" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="gallery-item overflow-hidden rounded-3">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gallery 3" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="gallery-item overflow-hidden rounded-3">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gallery 4" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="gallery-item overflow-hidden rounded-3">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gallery 5" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="gallery-item overflow-hidden rounded-3">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gallery 6" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3" style="color: #F4F1ED;">Sea Charm</h5>
+                    <p class="text-light" data-translate="footer_description">Where luxury meets nature. Experience the perfect blend of comfort, elegance, and natural beauty at our exclusive resort.</p>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6 class="mb-3" style="color: #F4F1ED;" data-translate="footer_quick_links">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-light text-decoration-none" data-translate="nav_home">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-light text-decoration-none" data-translate="nav_about">About</a></li>
+                        <li class="mb-2"><a href="#rooms" class="text-light text-decoration-none" data-translate="nav_rooms">Rooms</a></li>
+                        <li class="mb-2"><a href="#facilities" class="text-light text-decoration-none" data-translate="nav_facilities">Facilities</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6 class="mb-3" style="color: #F4F1ED;" data-translate="footer_services">Services</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none" data-translate="footer_spa">Spa & Wellness</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none" data-translate="footer_dining">Fine Dining</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none" data-translate="footer_events">Events</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none" data-translate="footer_concierge">Concierge</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="mb-3" style="color: #F4F1ED;" data-translate="footer_newsletter">Newsletter</h6>
+                    <p class="text-light mb-3" data-translate="footer_newsletter_desc">Subscribe to get special offers and updates</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" data-translate-placeholder="footer_email_placeholder" placeholder="Your email">
+                        <button class="btn text-dark fw-semibold" type="button" style="background-color: #F4F1ED; border-color: #F4F1ED;" data-translate="footer_subscribe">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="mb-0 text-light" data-translate="footer_copyright">&copy; 2024 Sea Charm. All rights reserved.</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <a href="#" class="text-light text-decoration-none me-3" data-translate="footer_privacy">Privacy Policy</a>
+                    <a href="#" class="text-light text-decoration-none" data-translate="footer_terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html> 
